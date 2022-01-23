@@ -10,6 +10,7 @@
     "jest-server.js"
   ],
   "dependencies": {
+    "eslint": "^8.7.0",    
     "@typescript-eslint/eslint-plugin": "^5.10.0",
     "@typescript-eslint/parser": "^5.10.0",
     "eslint-config-airbnb": "^19.0.2",
