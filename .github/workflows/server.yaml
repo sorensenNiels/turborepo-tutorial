@@ -5,7 +5,7 @@ on:
     branches: [main]
     paths:
       - 'apps/server/**'
-      - '.github/workflow/server.yaml'
+      - '.github/workflows/server.yaml'
   pull_request:
     branches: [main]
 
