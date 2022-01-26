@@ -1,13 +1,12 @@
-import React from 'react'
-
-import HelloWorld from '@src/components/HelloWorld'
-import Head from 'next/head'
-import { CoolInterface } from 'server/src/lib/CoolInterface'
+import HelloWorld from '@src/components/HelloWorld';
+import Head from 'next/head';
+import React from 'react';
+import { CoolInterface } from 'server/src/lib/CoolInterface';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const coolKid: CoolInterface = {
-  amICool: false,
-}
+  amICool: false
+};
 
 const Home = () => (
   <div className="flex flex-col items-center justify-center min-h-screen py-2">
@@ -21,6 +20,6 @@ const Home = () => (
       <div className="bg-yellow-200 h-12 w-12" />
     </main>
   </div>
-)
+);
 
-export default Home
+export default Home;

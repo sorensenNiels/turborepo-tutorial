@@ -2,24 +2,28 @@
   "$schema": "https://json.schemastore.org/tsconfig",
   "display": "Default",
   "compilerOptions": {
+    "module": "esnext",
+    "lib": ["ES2021", "DOM", "DOM.Iterable"],
+
     "allowJs": false,
     "composite": false,
     "declaration": true,
     "declarationMap": true,
     "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
+
     "incremental": true,
     "inlineSources": false,
     "isolatedModules": true,
-    "lib": ["ES2021", "DOM", "DOM.Iterable"],
-    "module": "esnext",
     "moduleResolution": "node",
-    "noUnusedLocals": false,
-    "noUnusedParameters": false,
     "preserveWatchOutput": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
+
+    "typeRoots": ["../../node_modules/@types"],
+
     "strict": true,
-    "typeRoots": ["../../node_modules/@types"]
+    "forceConsistentCasingInFileNames": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false
   }
 }

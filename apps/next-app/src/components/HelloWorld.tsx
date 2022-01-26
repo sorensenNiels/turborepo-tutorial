@@ -1,6 +1,5 @@
-import React from 'react'
-
-import { Button } from 'ui/Button'
+import React from 'react';
+import { Button } from 'ui/Button';
 
 const HelloWorld = () => (
   <>
@@ -10,6 +9,6 @@ const HelloWorld = () => (
     </label>
     <Button />
   </>
-)
+);
 
-export default HelloWorld
+export default HelloWorld;

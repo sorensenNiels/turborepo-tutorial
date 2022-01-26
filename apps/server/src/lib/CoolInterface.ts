@@ -1,3 +1,3 @@
 export interface CoolInterface {
-  amICool: boolean
+  amICool: boolean;
 }
