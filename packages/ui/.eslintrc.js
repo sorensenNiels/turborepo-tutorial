@@ -6,6 +6,6 @@ module.exports = {
   },
   rules: {
     'import/prefer-default-export': 'off',
-    'eact/function-component-definition': 'off'
+    'react/function-component-definition': 'off'
   }
 };
