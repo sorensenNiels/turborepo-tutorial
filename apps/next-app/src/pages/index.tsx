@@ -1,12 +1,11 @@
 import HelloWorld from '@src/components/HelloWorld';
 import Head from 'next/head';
 import React from 'react';
-import { CoolInterface } from 'server/src/lib/CoolInterface';
+// import { CoolInterface } from 'server/src/lib/CoolInterface';
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-const coolKid: CoolInterface = {
-  amICool: false
-};
+// const coolKid: CoolInterface = {
+//   amICool: false
+// };
 
 const Home = () => (
   <div className="flex flex-col items-center justify-center min-h-screen py-2">

@@ -11,6 +11,7 @@ This turborepo uses [Yarn](https://classic.yarnpkg.com/lang/en/) as a package ma
 - `next-app`: a [Next.js](https://nextjs.org) app setup for tailwind css
 - `server`: a standard express based app (back-end)
 - `nest-server`: a [Nest.js](https://nestjs.com) backend server
+  `nest-linkedin-clone`: a [Next.js](https://nextjs.org) linkedin clone, heavily inspired by https://github.com/lukef7fywmrp/linkedin-clone
 - `ui`: a stub React component library shared by both `web` and `docs` applications
 - `config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`, and jest)
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo

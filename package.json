@@ -12,7 +12,8 @@
     "test": "turbo run test",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "dependencies:upgrade": "yarn && yarn upgrade-interactive --latest"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "5.16.1",
@@ -20,6 +21,7 @@
     "@testing-library/react-hooks": "7.0.2",
     "@testing-library/user-event": "13.5.0",
     "@types/jest": "27.4.0",
+    "@types/lodash": "^4.14.178",
     "esbuild": "0.14.14",
     "esbuild-jest": "0.5.0",
     "husky": "7.0.4",
@@ -30,34 +32,7 @@
     "msw": "0.36.7",
     "prettier": "2.5.1",
     "prettier-plugin-organize-imports": "^2.3.4",
-    "turbo": "1.0.29"
-  },
-  "turbo": {
-    "pipeline": {
-      "build": {
-        "dependsOn": [
-          "^build"
-        ],
-        "outputs": [
-          "dist/**",
-          ".next/**"
-        ]
-      },
-      "test": {
-        "dependsOn": [
-          "^build"
-        ],
-        "outputs": [
-          "coverage/**"
-        ]
-      },
-      "lint": {
-        "outputs": []
-      },
-      "dev": {
-        "cache": false
-      }
-    }
+    "turbo": "1.1.1"
   },
   "lint-staged": {
     "apps/**/*.{js,ts,jsx,tsx}": [

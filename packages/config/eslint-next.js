@@ -30,13 +30,13 @@ module.exports = {
     // react
     'react/function-component-definition': [
       2,
-      {
-        namedComponents: 'arrow-function'
-      }
+      { namedComponents: 'arrow-function' }
     ],
 
     // next
-    '@next/next/no-html-link-for-pages': 'off'
+    '@next/next/no-html-link-for-pages': 'off',
+
+    'no-unused-vars': ['error', { argsIgnorePattern: '^_' }]
   },
   overrides: [
     {

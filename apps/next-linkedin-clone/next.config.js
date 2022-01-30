@@ -1,0 +1,8 @@
+const withTM = require('next-transpile-modules')(['ui']);
+
+module.exports = withTM({
+  images: {
+    domains: ['rb.gy']
+  },
+  reactStrictMode: true
+});
