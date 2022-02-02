@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import { useSession } from 'next-auth/react';
 import React, { useState } from 'react';
 import { useRecoilState } from 'recoil';

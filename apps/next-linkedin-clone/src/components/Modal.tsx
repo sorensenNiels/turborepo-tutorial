@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
+/* eslint-disable @typescript-eslint/no-non-null-asserted-optional-chain */
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import { Avatar } from '@mui/material';
 import IconButton from '@mui/material/IconButton';
