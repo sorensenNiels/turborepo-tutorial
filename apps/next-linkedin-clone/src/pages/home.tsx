@@ -24,7 +24,12 @@ const HomePage: NextPage<HomeProps> = ({ providers }: HomeProps) => (
     </Head>
     <header className="flex justify-around items-center py-4">
       <div className="relative w-36 h-10">
-        <Image src="https://rb.gy/vtbzlp" layout="fill" objectFit="contain" />
+        <Image
+          src="https://rb.gy/vtbzlp"
+          layout="fill"
+          objectFit="contain"
+          alt=""
+        />
       </div>
       <div className="flex items-center sm:divide-x divide-gray-300">
         <div className="hidden sm:flex space-x-8 pr-4">
@@ -71,7 +76,7 @@ const HomePage: NextPage<HomeProps> = ({ providers }: HomeProps) => (
       </div>
 
       <div className="relative xl:absolute w-80 h-80 xl:w-[650px] xl:h-[650px] top-14 right-5">
-        <Image src="https://rb.gy/vkzpzt" layout="fill" priority />
+        <Image src="https://rb.gy/vkzpzt" layout="fill" priority alt="" />
       </div>
     </main>
   </div>

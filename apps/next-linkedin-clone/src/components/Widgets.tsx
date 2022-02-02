@@ -47,6 +47,7 @@ const Widgets = ({ articles }: Props) => (
           layout="fill"
           objectFit="contain"
           priority
+          alt=""
         />
       </div>
     </div>
