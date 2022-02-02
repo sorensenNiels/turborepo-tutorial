@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import ArrowForwardIosRoundedIcon from '@mui/icons-material/ArrowForwardIosRounded';
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import ExploreIcon from '@mui/icons-material/Explore';

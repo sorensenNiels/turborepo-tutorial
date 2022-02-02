@@ -1,5 +1,3 @@
-/* eslint-disable no-underscore-dangle */
-/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from 'react';
 import { useRecoilState } from 'recoil';
 import { handlePostState, useSSRPostsState } from '../atoms/postAtom';
@@ -32,6 +30,7 @@ const Feed = ({ posts }: FeedProps) => {
     };
 
     fetchPosts();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [handlePost]);
 
   // console.log(realtimePosts);

@@ -1,4 +1,5 @@
-/* eslint-disable react/button-has-type */
+/* eslint-disable @typescript-eslint/no-non-null-asserted-optional-chain */
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import ArticleIcon from '@mui/icons-material/Article';
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import PhotoSizeSelectActualIcon from '@mui/icons-material/PhotoSizeSelectActual';

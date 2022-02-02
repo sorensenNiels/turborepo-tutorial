@@ -3,13 +3,18 @@ module.exports = {
     browser: true,
     node: true
   },
+
+  plugins: ['import', '@typescript-eslint/eslint-plugin'],
+
   extends: [
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
     'next/core-web-vitals',
     'plugin:import/recommended',
     'plugin:import/typescript',
     'prettier'
   ],
-  plugins: ['@typescript-eslint', 'import'],
+
   settings: {
     next: {
       rootDir: ['apps/*/', 'packages/*/']
@@ -28,7 +33,10 @@ module.exports = {
     // next
     '@next/next/no-html-link-for-pages': 'off',
 
-    'no-unused-vars': ['error', { argsIgnorePattern: '^_' }]
+    'no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
+
+    'no-console': 'error'
   },
   ignorePatterns: [
     '**/*.js',

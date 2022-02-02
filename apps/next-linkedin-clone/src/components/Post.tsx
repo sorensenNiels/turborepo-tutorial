@@ -1,10 +1,3 @@
-/* eslint-disable react/button-has-type */
-/* eslint-disable @next/next/no-img-element */
-/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
-/* eslint-disable no-underscore-dangle */
-/* eslint-disable @typescript-eslint/no-unused-vars */
-/* eslint-disable react/require-default-props */
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import CommentOutlinedIcon from '@mui/icons-material/CommentOutlined';
 import DeleteRoundedIcon from '@mui/icons-material/DeleteRounded';
@@ -14,6 +7,7 @@ import ThumbUpOffAltOutlinedIcon from '@mui/icons-material/ThumbUpOffAltOutlined
 import ThumbUpOffAltRoundedIcon from '@mui/icons-material/ThumbUpOffAltRounded';
 import { Avatar, IconButton } from '@mui/material';
 import { useSession } from 'next-auth/react';
+import Image from 'next/image';
 import React, { useState } from 'react';
 import { useRecoilState } from 'recoil';
 import TimeAgo from 'timeago-react';
@@ -92,7 +86,7 @@ const Post = ({ post, modalPost = false }: PostProps) => {
       )}
 
       {post.photoUrl && !modalPost && (
-        <img
+        <Image
           src={post.photoUrl}
           alt=""
           className="w-full cursor-pointer"

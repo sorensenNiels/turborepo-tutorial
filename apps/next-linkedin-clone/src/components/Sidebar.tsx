@@ -1,3 +1,6 @@
+/* eslint-disable no-console */
+/* eslint-disable @typescript-eslint/no-non-null-asserted-optional-chain */
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import AddRoundedIcon from '@mui/icons-material/AddRounded';
 import BookmarkOutlinedIcon from '@mui/icons-material/BookmarkOutlined';
 import { Avatar } from '@mui/material';
@@ -8,7 +11,7 @@ import React from 'react';
 const Sidebar = () => {
   const { data: session } = useSession();
 
-  // console.log(session);
+  console.log(session);
 
   return (
     <div className="space-y-2 min-w-max max-w-lg">

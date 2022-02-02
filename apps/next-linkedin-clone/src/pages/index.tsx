@@ -1,6 +1,4 @@
 /* eslint-disable no-console */
-/* eslint-disable @typescript-eslint/no-unused-vars */
-/* eslint-disable no-underscore-dangle */
 import { AnimatePresence } from 'framer-motion';
 import { getSession, GetSessionParams, useSession } from 'next-auth/react';
 import { useTheme } from 'next-themes';

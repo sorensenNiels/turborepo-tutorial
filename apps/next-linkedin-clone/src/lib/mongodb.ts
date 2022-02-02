@@ -1,7 +1,3 @@
-/* eslint-disable @typescript-eslint/naming-convention */
-
-/* eslint-disable import/no-mutable-exports */
-/* eslint-disable no-underscore-dangle */
 // This approach is taken from https://github.com/vercel/next.js/tree/canary/examples/with-mongodb
 import _ from 'lodash';
 import { MongoClient, MongoClientOptions } from 'mongodb';

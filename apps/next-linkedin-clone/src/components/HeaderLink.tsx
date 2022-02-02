@@ -1,6 +1,4 @@
-/* eslint-disable jsx-a11y/no-static-element-interactions */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
-/* eslint-disable react/require-default-props */
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { Avatar, SvgIcon } from '@mui/material';
 import { signOut, useSession } from 'next-auth/react';
 import React from 'react';

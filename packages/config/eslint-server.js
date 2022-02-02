@@ -30,6 +30,11 @@ module.exports = {
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-explicit-any': 2,
 
-    'import/prefer-default-export': 'off'
+    'import/prefer-default-export': 'off',
+
+    'no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
+
+    'no-console': 'warn'
   }
 };
