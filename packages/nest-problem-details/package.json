@@ -1,11 +1,11 @@
 {
-  "name": "nest-problem-details",
+  "name": "@packages/nest-problem-details",
   "version": "0.0.1",
   "description": "",
   "author": "",
   "private": true,
   "license": "UNLICENSED",
-  "main": "./src/index.ts",
+  "main": "./dist/index.js",
   "types": "./src/index.ts",
   "scripts": {
     "build": "nest build",
@@ -13,12 +13,12 @@
     "test": "jest"
   },
   "dependencies": {
+    "@packages/essentials": "*",
     "@nestjs/common": "8.2.6",
     "@nestjs/core": "8.2.6",
-    "@packages/essentials": "*",
-    "class-validator": "^0.13.2",
-    "lodash": "^4.17.21",
-    "type-fest": "^2.11.1"
+    "class-validator": "0.13.2",
+    "lodash": "4.17.21",
+    "type-fest": "2.11.1"
   },
   "devDependencies": {
     "config": "*",
