@@ -31,6 +31,40 @@
         "uriFormat": "%s",
         "action": "debugWithChrome"
       }
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Jest Current File",
+      "runtimeArgs": [
+        "--inspect-brk",
+        "${workspaceFolder}/node_modules/.bin/jest",
+        "${relativeFile}",
+        "--runInBand",
+        "--config=${workspaceFolder}/${input:package}/jest.config.js"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "disableOptimisticBPs": true,
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "timeout": 10000
+    }
+  ],
+  "inputs": [
+    {
+      "type": "pickString",
+      "id": "package",
+      "description": "In what package does the test file reside?",
+      "options": [
+        "apps/nest-server",
+        "apps/next-app",
+        "apps/next-linkedin-clone",
+        "packages/nest-problem-details",
+        "packages/essentials"
+      ],
+      "default": "apps/nest-server"
     }
   ]
 }

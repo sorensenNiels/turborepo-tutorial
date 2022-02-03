@@ -1,0 +1,22 @@
+{
+  "name": "@packages/essentials",
+  "version": "0.0.1",
+  "description": "",
+  "author": "",
+  "private": true,
+  "license": "UNLICENSED",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "test": "jest --coverage --passWithNoTests",
+    "lint": "eslint src --fix"
+  },
+  "dependencies": {
+    "type-fest": "^2.11.1"
+  },
+  "devDependencies": {
+    "tsconfig": "*",
+    "config": "*"
+  }
+}

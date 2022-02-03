@@ -1,15 +1,24 @@
+const jestCommon = require('./jest-common');
+
 module.exports = {
-  ...require('./jest-common'),
+  ...jestCommon,
+
+  resetMocks: false,
+
+  testEnvironment: 'node',
+  rootDir: 'src',
 
   moduleFileExtensions: ['js', 'json', 'ts'],
-  rootDir: 'src',
-  testRegex: '.*\\.spec\\.ts$',
-  transform: {
-    '^.+\\.ts$': 'ts-jest',
-    '^.+\\.js$': 'ts-jest'
-  },
-  collectCoverageFrom: ['**/*.(t|j)s'],
-  coverageDirectory: '../coverage',
 
-  testEnvironment: 'node'
+  testRegex: '.*\\.spec\\.ts$',
+
+  transform: {
+    // '.+\\.(t|j)s$': 'ts-jest'
+    '.+\\.(t)s$': 'ts-jest'
+  },
+
+  // collectCoverageFrom: ['**/*.(t|j)s'],
+
+  collectCoverageFrom: ['**/*.(t)s'],
+  coverageDirectory: '../coverage'
 };

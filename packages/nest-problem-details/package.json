@@ -1,0 +1,27 @@
+{
+  "name": "nest-problem-details",
+  "version": "0.0.1",
+  "description": "",
+  "author": "",
+  "private": true,
+  "license": "UNLICENSED",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "build": "nest build",
+    "lint": "eslint src --fix",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@nestjs/common": "8.2.6",
+    "@nestjs/core": "8.2.6",
+    "@packages/essentials": "*",
+    "class-validator": "^0.13.2",
+    "lodash": "^4.17.21",
+    "type-fest": "^2.11.1"
+  },
+  "devDependencies": {
+    "config": "*",
+    "tsconfig": "*"
+  }
+}
