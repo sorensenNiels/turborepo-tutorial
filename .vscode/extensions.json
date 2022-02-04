@@ -8,6 +8,7 @@
     "esbenp.prettier-vscode",
     "bradlc.vscode-tailwindcss",
     "visualstudioexptteam.vscodeintellicode",
-    "vscode-icons-team.vscode-icons"
+    "vscode-icons-team.vscode-icons",
+    "rangav.vscode-thunder-client"
   ]
 }
