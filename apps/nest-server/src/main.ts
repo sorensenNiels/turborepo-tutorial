@@ -12,7 +12,9 @@ import {
   ProblemDetailsExceptionFilter,
   ValidationErrorException
 } from '@packages/nest-problem-details';
+import express from 'express';
 import { AppModule } from './app.module';
+import { RequestLoggerInterceptor } from './interceptors/request-logger.interceptor';
 
 async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(
@@ -24,6 +26,20 @@ async function bootstrap() {
     }
   );
 
+  // app.use(cookieParser());
+  app.use(express.urlencoded({ extended: true, limit: 1024 }));
+  app.use(express.json({ limit: 1024 }));
+  app.use(
+    express.text({
+      type: [
+        'text/plain',
+        'application/xml',
+        'text/xml',
+        'application/soap+xml'
+      ]
+    })
+  );
+
   const reflector = app.get(Reflector);
 
   // Setup global filters
@@ -31,7 +47,10 @@ async function bootstrap() {
     new ProblemDetailsExceptionFilter('https://www.nodesoft.dk/problems/')
   );
 
-  app.useGlobalInterceptors(new ClassSerializerInterceptor(reflector));
+  app.useGlobalInterceptors(
+    new RequestLoggerInterceptor(),
+    new ClassSerializerInterceptor(reflector)
+  );
 
   app.useGlobalPipes(
     new ValidationPipe({
