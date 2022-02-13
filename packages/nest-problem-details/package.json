@@ -21,6 +21,6 @@
   },
   "devDependencies": {
     "dev-config": "*",
-    "tsconfig": "*"
+    "dev-tsconfig": "*"
   }
 }

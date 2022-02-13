@@ -15,7 +15,7 @@
     "dev-config": "*",
     "postcss": "8.4.6",
     "tailwindcss": "3.0.22",
-    "tsconfig": "*",
+    "dev-tsconfig": "*",
     "typescript": "4.5.5"
   }
 }
