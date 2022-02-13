@@ -13,7 +13,7 @@
     "lint": "eslint src --fix"
   },
   "dependencies": {
-    "type-fest": "^2.11.2"
+    "type-fest": "2.11.2"
   },
   "devDependencies": {
     "dev-config": "*",
