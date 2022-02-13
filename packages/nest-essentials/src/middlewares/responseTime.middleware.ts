@@ -10,7 +10,6 @@ export class ResponseTimeMiddleware implements NestMiddleware {
 
   private static options: responseTime.ResponseTimeOptions;
 
-  // eslint-disable-next-line class-methods-use-this
   public use(req: Request, res: Response, next: NextFunction): void {
     if (ResponseTimeMiddleware.options) {
       responseTime(ResponseTimeMiddleware.options)(req, res, next);
