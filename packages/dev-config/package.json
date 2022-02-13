@@ -1,10 +1,10 @@
 {
-  "name": "config",
+  "name": "dev-config",
   "version": "0.0.0",
   "main": "index.js",
   "license": "MIT",
   "files": [
-    "exlint-base.js",
+    "eslint-base.js",
     "eslint-next.js",
     "eslint-server.js",
     "estlint-nest.js",

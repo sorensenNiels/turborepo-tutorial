@@ -8,7 +8,7 @@
   "main": "./dist/index.js",
   "types": "./src/index.ts",
   "scripts": {
-    "build": "rm -rf dist && tsc",
+    "build": "tsc -p tsconfig.build.json",
     "test": "jest --coverage --passWithNoTests",
     "lint": "eslint src --fix"
   },
@@ -16,7 +16,7 @@
     "type-fest": "^2.11.2"
   },
   "devDependencies": {
-    "config": "*",
+    "dev-config": "*",
     "tsconfig": "*"
   }
 }

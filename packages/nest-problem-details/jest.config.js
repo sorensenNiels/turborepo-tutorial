@@ -1,4 +1,4 @@
-const base = require('config/jest-nest');
+const base = require('dev-config/jest-nest');
 
 module.exports = {
   ...base

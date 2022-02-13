@@ -1,5 +1,5 @@
 module.exports = {
-  ...require('config/jest-server'),
+  ...require('dev-config/jest-server'),
   rootDir: '.',
   name: 'next-linkedin-clone',
   displayName: 'Next-linkedin-clone Tests',

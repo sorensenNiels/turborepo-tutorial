@@ -1,5 +1,5 @@
 module.exports = {
-  ...require('config/jest-server'),
+  ...require('dev-config/jest-server'),
   rootDir: '.',
   name: 'next-app',
   displayName: 'Next-app Tests',
@@ -18,4 +18,4 @@ module.exports = {
   moduleNameMapper: {
     '@src/(.*)': '<rootDir>/src/$1'
   }
-}
+};

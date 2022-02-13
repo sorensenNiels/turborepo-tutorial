@@ -1,4 +1,4 @@
 module.exports = {
-  ...require('config/jest-nest'),
+  ...require('dev-config/jest-nest'),
   rootDir: '.'
 };

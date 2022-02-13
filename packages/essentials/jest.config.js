@@ -1,4 +1,4 @@
 module.exports = {
-  ...require('config/jest-server'),
+  ...require('dev-config/jest-server'),
   rootDir: '.'
 };
