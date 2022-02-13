@@ -13,10 +13,10 @@
     "lint": "eslint src --fix"
   },
   "dependencies": {
-    "type-fest": "^2.11.1"
+    "type-fest": "^2.11.2"
   },
   "devDependencies": {
-    "tsconfig": "*",
-    "config": "*"
+    "config": "*",
+    "tsconfig": "*"
   }
 }

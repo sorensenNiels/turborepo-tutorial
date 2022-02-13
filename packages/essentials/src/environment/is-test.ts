@@ -1,3 +1,3 @@
-import { EnvironmentType } from './constants';
+import { Environment } from './constants';
 
-export const isTest = () => process.env.NODE_ENV === EnvironmentType.test;
+export const isTest = (): boolean => process.env.NODE_ENV === Environment.test;

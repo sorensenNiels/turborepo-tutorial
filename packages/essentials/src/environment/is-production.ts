@@ -1,4 +1,4 @@
-import { EnvironmentType } from './constants';
+import { Environment } from './constants';
 
-export const isProduction = () =>
-  process.env.NODE_ENV === EnvironmentType.production;
+export const isProduction = (): boolean =>
+  process.env.NODE_ENV === Environment.production;

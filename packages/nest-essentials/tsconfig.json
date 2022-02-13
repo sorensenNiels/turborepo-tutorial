@@ -1,0 +1,16 @@
+{
+  "extends": "tsconfig/nestjs.json",
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "composite": true,
+    "paths": {
+      "@config/*": ["src/config/*"],
+      "@config": ["src/config"],
+      "@logger/*": ["src/logger/*"],
+      "@logger": ["src/logger"]
+    }
+  },
+  "references": [{ "path": "../essentials/tsconfig.json", "prepend": false }]
+}

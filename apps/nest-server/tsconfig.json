@@ -3,5 +3,12 @@
   "compilerOptions": {
     "outDir": "./dist",
     "baseUrl": "./"
-  }
+  },
+  "references": [
+    { "path": "../../packages/essentials/tsconfig.json", "prepend": false },
+    {
+      "path": "../../packages/nest-problem-details/tsconfig.json",
+      "prepend": false
+    }
+  ]
 }
