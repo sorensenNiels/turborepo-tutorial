@@ -16,7 +16,7 @@ import express from 'express';
 import { AppModule } from './app.module';
 import { RequestLoggerInterceptor } from './interceptors/request-logger.interceptor';
 
-async function bootstrap() {
+async function bootstrap(): Promise<void> {
   const app = await NestFactory.create<NestExpressApplication>(
     AppModule,
     new ExpressAdapter(),
@@ -60,7 +60,9 @@ async function bootstrap() {
       validationError: {
         target: false
       },
-      exceptionFactory: (errors: ValidationError[]) => {
+      exceptionFactory: (
+        errors: ValidationError[]
+      ): ValidationErrorException => {
         return new ValidationErrorException(errors);
       }
     })

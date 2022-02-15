@@ -1,4 +1,5 @@
 import { Injectable } from '@nestjs/common';
+import { UnprocessableEntityException } from '@packages/nest-problem-details';
 import cuid from 'cuid';
 import _ from 'lodash';
 import { cats } from './data/cats.json';
@@ -14,7 +15,7 @@ export class CatsService {
     });
   }
 
-  create(cat: Cat) {
+  create(cat: Cat): Pick<Cat, 'id'> {
     const id = cuid();
     this.cats.push({ ...cat, id });
     return { id };
@@ -24,11 +25,23 @@ export class CatsService {
     return this.cats;
   }
 
-  findByName(name: string) {
-    return _.find(this.cats, { name });
+  findByName(name: string): Cat {
+    const cat = _.find(this.cats, { name });
+
+    if (!cat) {
+      throw new UnprocessableEntityException();
+    }
+
+    return cat;
   }
 
-  delete(id: string) {
-    return _.remove(this.cats, { id });
+  delete(id: string): Cat {
+    const cat = _.find(this.cats, { id });
+
+    if (!cat) {
+      throw new UnprocessableEntityException();
+    }
+
+    return cat;
   }
 }

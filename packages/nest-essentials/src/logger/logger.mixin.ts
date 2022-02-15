@@ -5,9 +5,8 @@ import _ from 'lodash';
 import { JsonObject } from 'type-fest';
 import {
   CONTEXT_ACCESS_TOKEN,
-  CONTEXT_INSTALLATION_ID,
-  CONTEXT_OWNER_ID,
-  CONTEXT_REQUEST_ID
+  CONTEXT_REQUEST_ID,
+  CONTEXT_TENANT_ID
 } from '../constants';
 import { SessionMiddleware } from '../middlewares';
 
@@ -16,19 +15,16 @@ export const loggerMixin = (): JsonObject => {
 
   try {
     const credentials: {
-      ownerId?: string;
+      tenantId?: string;
       accessToken?: string;
-      installationId?: string;
     } = {};
 
-    const ownerId = SessionMiddleware.get(CONTEXT_OWNER_ID);
+    const tenantId = SessionMiddleware.get(CONTEXT_TENANT_ID);
     const accessToken = SessionMiddleware.get(CONTEXT_ACCESS_TOKEN);
-    const installationId = SessionMiddleware.get(CONTEXT_INSTALLATION_ID);
     const requestId = SessionMiddleware.get(CONTEXT_REQUEST_ID);
 
-    if (ownerId) credentials.ownerId = ownerId;
+    if (tenantId) credentials.tenantId = tenantId;
     if (accessToken) credentials.accessToken = accessToken;
-    if (installationId) credentials.installationId = installationId;
     if (requestId) ret.requestId = requestId;
 
     if (!_.isEmpty(credentials)) {

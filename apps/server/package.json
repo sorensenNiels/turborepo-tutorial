@@ -14,11 +14,11 @@
   "license": "ISC",
   "devDependencies": {
     "@types/express": "4.17.13",
-    "@types/node": "17.0.17",
+    "@types/node": "17.0.18",
     "dev-config": "*",
+    "dev-tsconfig": "*",
     "nodemon": "2.0.15",
     "ts-node": "10.5.0",
-    "dev-tsconfig": "*",
     "typescript": "4.5.5"
   },
   "dependencies": {
