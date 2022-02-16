@@ -1,8 +1,8 @@
 import { Field, Int, ObjectType } from '@nestjs/graphql';
-import { Cat } from '../interfaces';
+import { ICat } from '../interfaces';
 
 @ObjectType()
-export class CatModel implements Cat {
+export class Cat implements ICat {
   @Field(_type => String)
   id!: string;
 

@@ -1,29 +1,29 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { Args, Query, Resolver } from '@nestjs/graphql';
-import { CatsService } from './cats.service';
-import { Cat } from './interfaces';
-import { CatModel } from './models/cat.model';
+import { CatsService } from '../cats.service';
+import { ICat } from '../interfaces';
+import { Cat } from './cat.model';
 
-@Resolver((of: CatModel) => CatModel)
+@Resolver((of: Cat) => Cat)
 export class CatsResolver {
   constructor(private catsService: CatsService) {}
 
-  @Query(returns => CatModel, { name: 'cat' })
-  async getCat(@Args('id', { type: () => String }) id: string): Promise<Cat> {
+  @Query(returns => Cat, { name: 'cat' })
+  async getCat(@Args('id', { type: () => String }) id: string): Promise<ICat> {
     return this.catsService.findById(id);
   }
 
-  @Query(returns => CatModel, { name: 'catByName' })
+  @Query(returns => Cat, { name: 'catByName' })
   async getCatByName(
     @Args('name', { type: () => String }) name: string
-  ): Promise<Cat> {
+  ): Promise<ICat> {
     return this.catsService.findByName(name);
   }
 
-  @Query(returns => [CatModel], { name: 'catsByBreed' })
+  @Query(returns => [Cat], { name: 'catsByBreed' })
   async getAllCatsByBreed(
     @Args('breed', { type: () => String }) breed: string
-  ): Promise<Cat[]> {
+  ): Promise<ICat[]> {
     return this.catsService.getByBreed(breed);
   }
 }

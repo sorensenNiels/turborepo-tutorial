@@ -10,7 +10,7 @@ import {
 } from '@nestjs/common';
 import { CatsService } from './cats.service';
 import { CreateCatDto } from './dtos';
-import { Cat } from './interfaces';
+import { ICat } from './interfaces';
 
 @Controller('cats')
 export class CatsController {
@@ -18,19 +18,19 @@ export class CatsController {
 
   @Get('/:name')
   @HttpCode(HttpStatus.OK)
-  findByName(@Param('name') catName: string): Promise<Cat> {
+  findByName(@Param('name') catName: string): Promise<ICat> {
     return this.catsService.findByName(catName);
   }
 
   @Get()
   @HttpCode(HttpStatus.OK)
-  findAll(): Promise<Cat[]> {
+  findAll(): Promise<ICat[]> {
     return this.catsService.findAll();
   }
 
   @Post()
   @HttpCode(HttpStatus.CREATED)
-  create(@Body() createCatDto: CreateCatDto): Promise<Cat> {
+  create(@Body() createCatDto: CreateCatDto): Promise<ICat> {
     return this.catsService.create(createCatDto);
   }
 

@@ -3,11 +3,11 @@ import { UnprocessableEntityException } from '@packages/nest-problem-details';
 import cuid from 'cuid';
 import _ from 'lodash';
 import { cats } from './data/cats.json';
-import { Cat } from './interfaces';
+import { ICat } from './interfaces';
 
 @Injectable()
 export class CatsService {
-  private cats: Cat[];
+  private cats: ICat[];
 
   constructor() {
     this.cats = _.map(cats, cat => {
@@ -15,17 +15,17 @@ export class CatsService {
     });
   }
 
-  async create(cat: Cat): Promise<Cat> {
+  async create(cat: ICat): Promise<ICat> {
     const newCat = { ...cat, id: cuid() };
     this.cats.push(newCat);
     return newCat;
   }
 
-  async findAll(): Promise<Cat[]> {
+  async findAll(): Promise<ICat[]> {
     return this.cats;
   }
 
-  async findById(id: string): Promise<Cat> {
+  async findById(id: string): Promise<ICat> {
     const cat = _.find(this.cats, { id });
 
     if (!cat) {
@@ -35,7 +35,7 @@ export class CatsService {
     return cat;
   }
 
-  async findByName(name: string): Promise<Cat> {
+  async findByName(name: string): Promise<ICat> {
     const cat = _.find(this.cats, { name });
 
     if (!cat) {
@@ -45,7 +45,7 @@ export class CatsService {
     return cat;
   }
 
-  async getByBreed(breed: string): Promise<Cat[]> {
+  async getByBreed(breed: string): Promise<ICat[]> {
     const cats = _.filter(this.cats, { breed });
 
     return cats;

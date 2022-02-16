@@ -2,7 +2,7 @@
 # THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
 # ------------------------------------------------------
 
-type CatModel {
+type Cat {
   id: String!
   name: String!
   age: Int!
@@ -10,7 +10,7 @@ type CatModel {
 }
 
 type Query {
-  cat(id: String!): CatModel!
-  catByName(name: String!): CatModel!
-  catsByBreed(breed: String!): [CatModel!]!
+  cat(id: String!): Cat!
+  catByName(name: String!): Cat!
+  catsByBreed(breed: String!): [Cat!]!
 }

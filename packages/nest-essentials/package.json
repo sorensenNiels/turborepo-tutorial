@@ -12,8 +12,8 @@
     "test": "jest"
   },
   "dependencies": {
-    "@nestjs/common": "8.3.0",
-    "@nestjs/core": "8.3.0",
+    "@nestjs/common": "8.3.1",
+    "@nestjs/core": "8.3.1",
     "@packages/essentials": "*",
     "class-validator": "0.13.2",
     "cls-hooked": "4.2.2",
@@ -25,7 +25,7 @@
     "type-fest": "2.11.2"
   },
   "devDependencies": {
-    "@nestjs/testing": "8.3.0",
+    "@nestjs/testing": "8.3.1",
     "@types/cls-hooked": "4.3.3",
     "@types/config": "0.0.41",
     "@types/lodash": "4.14.178",
