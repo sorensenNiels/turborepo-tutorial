@@ -1,28 +1,42 @@
-import { Body, Controller, Delete, Get, Param, Post } from '@nestjs/common';
+import {
+  Body,
+  Controller,
+  Delete,
+  Get,
+  HttpCode,
+  HttpStatus,
+  Param,
+  Post
+} from '@nestjs/common';
 import { CatsService } from './cats.service';
 import { CreateCatDto } from './dtos';
+import { Cat } from './interfaces';
 
 @Controller('cats')
 export class CatsController {
   constructor(private catsService: CatsService) {}
 
   @Get('/:name')
-  findByName(@Param('name') catName: string) {
+  @HttpCode(HttpStatus.OK)
+  findByName(@Param('name') catName: string): Promise<Cat> {
     return this.catsService.findByName(catName);
   }
 
   @Get()
-  findAll() {
+  @HttpCode(HttpStatus.OK)
+  findAll(): Promise<Cat[]> {
     return this.catsService.findAll();
   }
 
   @Post()
-  create(@Body() createCatDto: CreateCatDto) {
+  @HttpCode(HttpStatus.CREATED)
+  create(@Body() createCatDto: CreateCatDto): Promise<Cat> {
     return this.catsService.create(createCatDto);
   }
 
   @Delete('/:id')
-  delete(@Param('id') id: string) {
+  @HttpCode(HttpStatus.NO_CONTENT)
+  delete(@Param('id') id: string): Promise<void> {
     return this.catsService.delete(id);
   }
 }

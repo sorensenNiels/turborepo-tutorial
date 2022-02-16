@@ -6,7 +6,7 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-    "dev": "nest start --watch",
+    "dev": "nest start --debug --watch",
     "prebuild": "rimraf dist",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
@@ -22,14 +22,19 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
+    "@nestjs/apollo": "10.0.2",
     "@nestjs/common": "8.3.0",
     "@nestjs/core": "8.3.0",
-    "@nestjs/platform-express": "8.3.0",
+    "@nestjs/graphql": "10.0.2",
+    "@nestjs/platform-express": "8.2.3",
     "@nestjs/serve-static": "2.2.2",
     "@packages/nest-problem-details": "*",
+    "apollo-server": "3.6.2",
+    "apollo-server-express": "3.6.2",
     "class-transformer": "0.5.1",
     "class-validator": "0.13.2",
     "cuid": "2.1.8",
+    "graphql": "16.3.0",
     "reflect-metadata": "0.1.13",
     "rimraf": "3.0.2",
     "rxjs": "7.5.4"

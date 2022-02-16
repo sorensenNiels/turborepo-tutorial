@@ -27,8 +27,8 @@ async function bootstrap(): Promise<void> {
   );
 
   // app.use(cookieParser());
-  app.use(express.urlencoded({ extended: true, limit: 1024 }));
-  app.use(express.json({ limit: 1024 }));
+  app.use(express.urlencoded({ extended: true, limit: 4096 }));
+  app.use(express.json({ limit: 4096 }));
   app.use(
     express.text({
       type: [

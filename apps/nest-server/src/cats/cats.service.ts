@@ -7,7 +7,7 @@ import { Cat } from './interfaces';
 
 @Injectable()
 export class CatsService {
-  private readonly cats: Cat[];
+  private cats: Cat[];
 
   constructor() {
     this.cats = _.map(cats, cat => {
@@ -15,17 +15,27 @@ export class CatsService {
     });
   }
 
-  create(cat: Cat): Pick<Cat, 'id'> {
-    const id = cuid();
-    this.cats.push({ ...cat, id });
-    return { id };
+  async create(cat: Cat): Promise<Cat> {
+    const newCat = { ...cat, id: cuid() };
+    this.cats.push(newCat);
+    return newCat;
   }
 
-  findAll(): Cat[] {
+  async findAll(): Promise<Cat[]> {
     return this.cats;
   }
 
-  findByName(name: string): Cat {
+  async findById(id: string): Promise<Cat> {
+    const cat = _.find(this.cats, { id });
+
+    if (!cat) {
+      throw new UnprocessableEntityException();
+    }
+
+    return cat;
+  }
+
+  async findByName(name: string): Promise<Cat> {
     const cat = _.find(this.cats, { name });
 
     if (!cat) {
@@ -35,13 +45,17 @@ export class CatsService {
     return cat;
   }
 
-  delete(id: string): Cat {
-    const cat = _.find(this.cats, { id });
+  async getByBreed(breed: string): Promise<Cat[]> {
+    const cats = _.filter(this.cats, { breed });
 
-    if (!cat) {
+    return cats;
+  }
+
+  async delete(id: string): Promise<void> {
+    const cat = _.remove(this.cats, { id });
+
+    if (cat.length === 0) {
       throw new UnprocessableEntityException();
     }
-
-    return cat;
   }
 }
