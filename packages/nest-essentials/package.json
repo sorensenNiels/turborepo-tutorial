@@ -28,7 +28,7 @@
     "@nestjs/testing": "8.3.1",
     "@types/cls-hooked": "4.3.3",
     "@types/config": "0.0.41",
-    "@types/lodash": "4.14.178",
+    "@types/lodash": "4.14.179",
     "@types/response-time": "2.3.5",
     "dev-config": "*",
     "dev-tsconfig": "*"
