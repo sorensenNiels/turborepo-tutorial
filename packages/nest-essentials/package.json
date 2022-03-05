@@ -6,6 +6,7 @@
   "private": true,
   "license": "UNLICENSED",
   "main": "./dist/index.js",
+  "types": "./src/index.ts",
   "scripts": {
     "build": "nest build",
     "lint": "eslint src --fix",
