@@ -10,7 +10,11 @@
     "estlint-nest.js",
     "jest-next.js",
     "jest-server.js",
-    "jest-nest.js"
+    "jest-nest.js",
+    "ts-base.json",
+    "ts-server.json",
+    "ts-next.json",
+    "ts-nest.json"
   ],
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "5.12.1",

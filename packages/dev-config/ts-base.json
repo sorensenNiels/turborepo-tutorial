@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "display": "Default",
+  "display": "Base",
   "compilerOptions": {
     "module": "esnext",
     "lib": ["ES2021", "DOM", "DOM.Iterable"],

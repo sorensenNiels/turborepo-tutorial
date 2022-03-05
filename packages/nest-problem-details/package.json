@@ -20,7 +20,6 @@
     "type-fest": "2.12.0"
   },
   "devDependencies": {
-    "dev-config": "*",
-    "dev-tsconfig": "*"
+    "dev-config": "*"
   }
 }
