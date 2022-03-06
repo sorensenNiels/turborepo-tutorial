@@ -28,6 +28,13 @@
     "eslint-plugin-jest-dom": "4.0.1",
     "eslint-plugin-prettier": "4.0.0",
     "eslint-plugin-promise": "6.0.0",
-    "eslint-plugin-testing-library": "5.0.6"
+    "eslint-plugin-testing-library": "5.0.6",
+    "tsconfig-paths": "3.13.0",
+    "@types/jest": "27.4.1",
+    "esbuild": "0.14.25",
+    "esbuild-jest": "0.5.0",
+    "jest": "27.5.1",
+    "jest-watch-typeahead": "1.0.0",
+    "ts-jest": "27.1.3"
   }
 }

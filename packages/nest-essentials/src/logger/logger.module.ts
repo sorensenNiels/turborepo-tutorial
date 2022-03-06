@@ -23,7 +23,8 @@ import { LoggerService } from './logger.service';
           customAttributeKeys: httpLoggerCustomAttributeKeys,
           genReqId: httpLoggerGenReqId
         }
-      })
+      }),
+      providers: []
     })
   ],
   exports: [LoggerService]
