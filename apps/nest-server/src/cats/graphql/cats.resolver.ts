@@ -8,6 +8,11 @@ import { Cat } from './cat.model';
 export class CatsResolver {
   constructor(private catsService: CatsService) {}
 
+  @Query(returns => [Cat], { name: 'cats' })
+  async getCats(): Promise<ICat[]> {
+    return this.catsService.findAll();
+  }
+
   @Query(returns => Cat, { name: 'cat' })
   async getCat(@Args('id', { type: () => String }) id: string): Promise<ICat> {
     return this.catsService.findById(id);

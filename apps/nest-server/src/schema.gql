@@ -10,6 +10,7 @@ type Cat {
 }
 
 type Query {
+  cats: [Cat!]!
   cat(id: String!): Cat!
   catByName(name: String!): Cat!
   catsByBreed(breed: String!): [Cat!]!
