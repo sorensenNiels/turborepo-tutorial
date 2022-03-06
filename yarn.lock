@@ -12392,7 +12392,6 @@ __metadata:
     turbo: 1.1.5
     typescript: 4.6.2
     webpack: 5.70.0
-    yarn: ^1.22.17
   languageName: unknown
   linkType: soft
 
@@ -13184,16 +13183,6 @@ __metadata:
     y18n: ^5.0.5
     yargs-parser: ^21.0.0
   checksum: 64fc2e32c56739f1d14d2d24acd17a6944c3c8e3e3558f09fc1953ac112e868cc16013d282886b9d5be22187f8b9ed4f60741a6b1011f595ce2718805a656852
-  languageName: node
-  linkType: hard
-
-"yarn@npm:^1.22.17":
-  version: 1.22.17
-  resolution: "yarn@npm:1.22.17"
-  bin:
-    yarn: ./bin/yarn.js
-    yarnpkg: ./bin/yarn.js
-  checksum: 9d5211477d439a4d7b5632d7c290a3be36d2edc13599b64964bff520d3a3a480db85010f3262293981abb4e618ac92aaafa4c4c54bae50a7713c7b8ec431adac
   languageName: node
   linkType: hard
 
