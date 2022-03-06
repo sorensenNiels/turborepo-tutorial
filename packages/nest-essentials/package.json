@@ -32,5 +32,9 @@
     "@types/lodash": "4.14.179",
     "@types/response-time": "2.3.5",
     "dev-config": "*"
+  },
+  "peerDependencies": {
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^7.5.4"
   }
 }
