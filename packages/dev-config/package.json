@@ -40,7 +40,7 @@
     "tsconfig-paths": "3.13.0",
     "typescript": "4.6.2"
   },
-  "peerDependencies": {
+  "optionalDependencies": {
     "next": "^12.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
