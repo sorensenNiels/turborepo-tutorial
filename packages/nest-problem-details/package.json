@@ -21,7 +21,7 @@
     "type-fest": "2.12.0"
   },
   "devDependencies": {
-    "dev-config": "*",
-    "@nestjs/testing": "8.4.0"
+    "@nestjs/testing": "8.4.0",
+    "dev-config": "*"
   }
 }
