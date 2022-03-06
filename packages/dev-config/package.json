@@ -16,7 +16,7 @@
     "ts-next.json",
     "ts-nest.json"
   ],
-  "dependencies": {
+  "devDependencies": {
     "@types/jest": "27.4.1",
     "@typescript-eslint/eslint-plugin": "5.13.0",
     "@typescript-eslint/parser": "5.13.0",
