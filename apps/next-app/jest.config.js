@@ -1,5 +1,5 @@
 module.exports = {
-  ...require('dev-config/jest-server'),
+  ...require('dev-config/jest-next'),
   rootDir: '.',
   name: 'next-app',
   displayName: 'Next-app Tests',

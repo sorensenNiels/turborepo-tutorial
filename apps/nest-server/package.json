@@ -36,6 +36,7 @@
     "cuid": "2.1.8",
     "express": "^4.17.3",
     "graphql": "16.3.0",
+    "lodash": "4.17.21",
     "reflect-metadata": "0.1.13",
     "rimraf": "3.0.2",
     "rxjs": "7.5.4"

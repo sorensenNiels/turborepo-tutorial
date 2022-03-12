@@ -1,6 +1,6 @@
-import { ConfigModule, ConfigService, CONFIG_LOG_LEVEL } from '@config';
 import { Module } from '@nestjs/common';
 import { LoggerModule as LoggerModulePino } from 'nestjs-pino';
+import { ConfigModule, ConfigService, CONFIG_LOG_LEVEL } from '../config';
 import {
   httpLoggerCustomAttributeKeys,
   httpLoggerCustomProps,
