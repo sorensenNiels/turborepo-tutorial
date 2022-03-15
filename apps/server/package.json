@@ -4,7 +4,7 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "dev": "rm -rf dist && yarn build && nodemon ./dist/src/index.js",
+    "dev": "rm -rf dist && npm run build && nodemon ./dist/src/index.js",
     "build": "tsc",
     "test": "jest --coverage",
     "lint": "eslint src --fix"
