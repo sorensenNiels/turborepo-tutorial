@@ -1,5 +1,5 @@
 {
-  "extends": "dev-config/ts-next.json",
+  "extends": "shared-config/ts-next.json",
   "include": ["."],
   "exclude": ["dist", "build", "node_modules"]
 }

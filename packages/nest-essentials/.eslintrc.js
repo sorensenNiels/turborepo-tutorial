@@ -1,5 +1,5 @@
 module.exports = {
-  ...require('dev-config/eslint-nest'),
+  ...require('shared-config/eslint-nest'),
   parserOptions: {
     root: true,
     tsconfigRootDir: __dirname,

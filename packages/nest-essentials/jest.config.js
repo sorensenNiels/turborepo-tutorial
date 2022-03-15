@@ -1,7 +1,7 @@
 const { pathsToModuleNameMapper } = require('ts-jest');
 const { compilerOptions } = require('./tsconfig.json');
 
-const base = require('dev-config/jest-nest');
+const base = require('shared-config/jest-nest');
 
 module.exports = {
   ...base,

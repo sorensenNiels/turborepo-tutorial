@@ -1,5 +1,5 @@
 {
-  "extends": "dev-config/ts-server.json",
+  "extends": "shared-config/ts-server.json",
   "compilerOptions": {
     "rootDir": "./src",
     "outDir": "./dist",

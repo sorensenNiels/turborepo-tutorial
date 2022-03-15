@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@nestjs/testing": "8.4.0",
-    "dev-config": "*"
+    "shared-config": "^0.0.1"
   },
   "peerDependencies": {
     "reflect-metadata": "^0.1.13",
