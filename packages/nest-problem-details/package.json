@@ -13,16 +13,16 @@
     "test": "jest"
   },
   "dependencies": {
-    "@nestjs/common": "8.4.1",
-    "@nestjs/core": "8.4.1",
+    "@nestjs/common": "^8.4.1",
+    "@nestjs/core": "^8.4.1",
     "@packages/essentials": "^0.0.1",
-    "class-validator": "0.13.2",
-    "express": "4.17.3",
-    "lodash": "4.17.21",
-    "type-fest": "2.12.0"
+    "class-validator": "^0.13.2",
+    "express": "^4.17.3",
+    "lodash": "^4.17.21",
+    "type-fest": "^2.12.0"
   },
   "devDependencies": {
-    "@nestjs/testing": "8.4.1",
+    "@nestjs/testing": "^8.4.1",
     "shared-config": "^0.0.1"
   },
   "peerDependencies": {
