@@ -1,11 +1,6 @@
 import Head from 'next/head';
 import React from 'react';
 import HelloWorld from '../components/HelloWorld';
-// import { CoolInterface } from 'server/src/lib/CoolInterface';
-
-// const coolKid: CoolInterface = {
-//   amICool: false
-// };
 
 const Home = () => (
   <div className="flex flex-col items-center justify-center min-h-screen py-2">

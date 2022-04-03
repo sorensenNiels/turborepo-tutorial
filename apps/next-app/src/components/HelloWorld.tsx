@@ -1,5 +1,5 @@
+import { Button } from '@nodesoft/ui/Button';
 import React from 'react';
-import { Button } from 'ui/Button';
 
 const HelloWorld = () => (
   <>
@@ -7,7 +7,7 @@ const HelloWorld = () => (
     <label htmlFor="name">
       <input id="name" name="name" type="text" />
     </label>
-    <Button />
+    <Button>Boop</Button>
   </>
 );
 
