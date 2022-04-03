@@ -1,5 +1,5 @@
 {
-  "extends": "shared-config/ts-nest.json",
+  "extends": "@nodesoft/shared-config/ts-nest.json",
   "compilerOptions": {
     "rootDir": "./src",
     "outDir": "./dist",

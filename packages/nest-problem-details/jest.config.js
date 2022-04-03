@@ -1,4 +1,4 @@
-const base = require('shared-config/jest-nest');
+const base = require('@nodesoft/shared-config/jest-nest');
 
 module.exports = {
   ...base

@@ -1,5 +1,5 @@
 module.exports = {
-  ...require('shared-config/jest-next'),
+  ...require('@nodesoft/shared-config/jest-next'),
   rootDir: '.',
   name: 'next-app',
   displayName: 'Next-app Tests',

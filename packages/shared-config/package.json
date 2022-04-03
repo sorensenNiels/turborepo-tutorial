@@ -1,5 +1,5 @@
 {
-  "name": "shared-config",
+  "name": "@nodesoft/shared-config",
   "description": "",
   "main": "index.js",
   "version": "0.0.1",

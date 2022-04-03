@@ -1,5 +1,5 @@
 {
-  "extends": "shared-config/ts-next.json",
+  "extends": "@nodesoft/shared-config/ts-next.json",
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {

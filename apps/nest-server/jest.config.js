@@ -1,4 +1,4 @@
 module.exports = {
-  ...require('shared-config/jest-nest'),
+  ...require('@nodesoft/shared-config/jest-nest'),
   rootDir: '.'
 };

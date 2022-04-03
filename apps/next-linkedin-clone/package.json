@@ -33,7 +33,7 @@
     "autoprefixer": "^10.4.4",
     "next-transpile-modules": "^9.0.0",
     "postcss": "^8.4.12",
-    "shared-config": "*",
+    "@nodesoft/shared-config": "*",
     "tailwindcss": "^3.0.23"
   }
 }

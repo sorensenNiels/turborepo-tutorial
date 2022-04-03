@@ -1,5 +1,5 @@
 {
-  "extends": "shared-config/ts-server.json",
+  "extends": "@nodesoft/shared-config/ts-server.json",
   "compilerOptions": {
     "rootDir": "./src",
     "outDir": "./dist",
