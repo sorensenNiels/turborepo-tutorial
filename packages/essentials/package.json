@@ -16,6 +16,6 @@
     "type-fest": "^2.12.0"
   },
   "devDependencies": {
-    "shared-config": "^0.0.1"
+    "shared-config": "*"
   }
 }
