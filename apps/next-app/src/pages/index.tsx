@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import React from 'react';
-import HelloWorld from '../components/HelloWorld';
+import MenuItems from '../components/MenuItems';
 
 const Home = () => (
   <div className="flex flex-col items-center justify-center min-h-screen py-2">
@@ -9,9 +9,8 @@ const Home = () => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
-    <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-      <HelloWorld />
-      <div className="bg-yellow-200 h-12 w-12" />
+    <main className="flex flex-col items-center justify-center w-full space-y-2">
+      <MenuItems />
     </main>
   </div>
 );

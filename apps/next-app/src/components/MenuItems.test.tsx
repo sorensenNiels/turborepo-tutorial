@@ -1,10 +1,10 @@
 import { render, screen } from '@testing-library/react';
 import React from 'react';
-import HelloWorld from './HelloWorld';
+import MenuItems from './MenuItems';
 
-describe('tests', () => {
+xdescribe('tests', () => {
   it('should', () => {
-    render(<HelloWorld />);
+    render(<MenuItems />);
     expect(screen.getByText('Boop')).toBeInTheDocument();
   });
 });

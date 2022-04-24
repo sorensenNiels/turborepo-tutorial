@@ -3,6 +3,7 @@ import _ from 'lodash';
 import { JsonObject } from 'type-fest';
 import { defaultHttpErrors } from './constants';
 import { ProblemDocumentDto, ProblemDocumentExtensionsDto } from './dtos';
+import { ErrorDetail } from './interfaces';
 import { ProblemDetail } from './interfaces/problem-detail.type';
 
 const Terms = {
@@ -53,7 +54,7 @@ export class ProblemDocument {
   static create(
     problemDocument: ProblemDocumentDto,
     extensions?: ProblemDocumentExtensionsDto
-  ) {
+  ): ProblemDocument {
     return new ProblemDocument({ ...problemDocument }, extensions);
   }
 
@@ -65,7 +66,9 @@ export class ProblemDocument {
   static from(exception: HttpException): ProblemDocument;
   static from(exception: Error): ProblemDocument;
   static from(exception: ProblemDetail): ProblemDocument;
-  static from(exception: ProblemDetail | Error | HttpException | string) {
+  static from(
+    exception: ProblemDetail | Error | HttpException | string
+  ): ProblemDocument {
     if (exception instanceof HttpException) {
       return ProblemDocument.fromHttpException(exception);
     }
@@ -92,7 +95,7 @@ export class ProblemDocument {
    * @param exception
    * @returns
    */
-  static fromError(exception: Error) {
+  static fromError(exception: Error): ProblemDocument {
     const status = HttpStatus.INTERNAL_SERVER_ERROR;
     const type = defaultHttpErrors[status];
     const title = _.startCase(type);
@@ -108,7 +111,7 @@ export class ProblemDocument {
    * @param exception
    * @returns
    */
-  static fromHttpException(exception: HttpException) {
+  static fromHttpException(exception: HttpException): ProblemDocument {
     const status = exception.getStatus();
 
     const errorResponse = exception.getResponse() as string | JsonObject;
@@ -190,18 +193,18 @@ export class ProblemDocument {
    * create an error log entry from this ProblemDocument
    * @returns this for chaining
    */
-  logError() {
+  logError(): this {
     const response = this.createResponse();
     const msg = `${response.detail} (${response.title})`;
     this.logger.error({ msg, response });
     return this;
   }
 
-  getError() {
+  getError(): ErrorDetail[] | undefined {
     return this.problemDocument.errors;
   }
 
-  getInternal() {
+  getInternal(): JsonObject | undefined {
     return this.problemDocument.internal;
   }
 }

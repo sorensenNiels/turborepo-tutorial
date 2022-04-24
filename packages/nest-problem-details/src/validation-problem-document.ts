@@ -11,7 +11,9 @@ const validationDocumentProperties = {
 };
 
 export class ValidationProblemDocument extends ProblemDocument {
-  static fromErrorDetail(errorDetail: ErrorDetail | ErrorDetail[]) {
+  static fromErrorDetail(
+    errorDetail: ErrorDetail | ErrorDetail[]
+  ): ValidationProblemDocument {
     return new ValidationProblemDocument(validationDocumentProperties, {
       errors: _.toArray(errorDetail)
     });
@@ -19,7 +21,7 @@ export class ValidationProblemDocument extends ProblemDocument {
 
   static fromValidationError(
     validationError: ValidationError | ValidationError[]
-  ) {
+  ): ValidationProblemDocument {
     const errors: ErrorDetail[] = [];
 
     _.forEach(_.castArray(validationError), err => {

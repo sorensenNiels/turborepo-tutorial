@@ -13,8 +13,8 @@
     "test": "jest"
   },
   "dependencies": {
-    "@nestjs/common": "8.4.3",
-    "@nestjs/core": "8.4.3",
+    "@nestjs/common": "8.4.4",
+    "@nestjs/core": "8.4.4",
     "@packages/essentials": "0.0.1",
     "class-validator": "0.13.2",
     "express": "4.17.3",
@@ -22,7 +22,7 @@
     "type-fest": "2.12.2"
   },
   "devDependencies": {
-    "@nestjs/testing": "8.4.3",
-    "@nodesoft/shared-config": "*"
+    "@nestjs/testing": "8.4.4",
+    "@nodesoft/shared-config": "^0.0.1"
   }
 }

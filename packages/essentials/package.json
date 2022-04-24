@@ -16,6 +16,6 @@
     "type-fest": "^2.12.0"
   },
   "devDependencies": {
-    "@nodesoft/shared-config": "*"
+    "@nodesoft/shared-config": "^0.0.1"
   }
 }

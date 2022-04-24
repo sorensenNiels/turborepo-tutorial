@@ -42,7 +42,10 @@ const mockArgumentsHost = {
   switchToWs: jest.fn()
 };
 
-function assertResponse(expectedStatus: number, expectedJson: ProblemDetail) {
+function assertResponse(
+  expectedStatus: number,
+  expectedJson: ProblemDetail
+): void {
   expect(mockType).toHaveBeenCalledWith(PROBLEM_CONTENT_TYPE);
   expect(mockStatus).toHaveBeenCalledWith(expectedStatus);
   expect(mockJson).toHaveBeenCalledWith(expect.objectContaining(expectedJson));
