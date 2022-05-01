@@ -23,7 +23,7 @@
     "express": "^4.17.3",
     "lodash": "^4.17.21",
     "nestjs-pino": "^2.5.2",
-    "pino-http": "^6.6.0",
+    "pino-http": "^7.0.0",
     "response-time": "^2.3.2",
     "rxjs": "^7.5.4",
     "type-fest": "^2.12.0"
