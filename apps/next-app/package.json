@@ -16,16 +16,16 @@
     "@fontsource/roboto": "4.5.5",
     "@mui/icons-material": "5.6.2",
     "@mui/material": "5.6.3",
-    "@nodesoft/ui": "^0.0.1",
+    "@nodesoft/ui": "*",
     "@react-google-maps/api": "2.10.2",
     "next": "12.1.5",
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "server": "1.0.37",
-    "@babel/core": "^7.0.0"
+    "@babel/core": "7.0.0"
   },
   "devDependencies": {
-    "@nodesoft/shared-config": "^0.0.1",
+    "@nodesoft/shared-config": "*",
     "@testing-library/dom": "8.13.0",
     "@testing-library/jest-dom": "5.16.4",
     "@testing-library/react": "13.1.1",

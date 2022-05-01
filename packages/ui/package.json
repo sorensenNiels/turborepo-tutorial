@@ -9,7 +9,7 @@
     "react-dom": "18.1.0"
   },
   "devDependencies": {
-    "@nodesoft/shared-config": "^0.0.1",
+    "@nodesoft/shared-config": "*",
     "@types/react": "18.0.8",
     "@types/react-dom": "18.0.3",
     "autoprefixer": "10.4.5",
