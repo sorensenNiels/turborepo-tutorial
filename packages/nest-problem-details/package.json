@@ -19,10 +19,12 @@
     "class-validator": "0.13.2",
     "express": "4.18.1",
     "lodash": "4.17.21",
-    "type-fest": "2.12.2"
+    "type-fest": "2.12.2",
+    "reflect-metadata": "0.1.12",
+    "rxjs": "7.1.0"
   },
   "devDependencies": {
     "@nestjs/testing": "8.4.4",
-    "@nodesoft/shared-config": "^0.0.1"
+    "@nodesoft/shared-config": "*"
   }
 }
