@@ -1,8 +1,19 @@
-/* eslint-disable no-console */
-/* eslint-disable @typescript-eslint/no-unused-vars */
-import { Button, Checkbox, Col, Form, Input, Layout, Row } from 'antd';
-import * as CSS from 'csstype';
-import React, { FC } from 'react';
+import React, { FC } from "react";
+import {
+  Layout,
+  Form,
+  Input,
+  Select,
+  Row,
+  Col,
+  Checkbox,
+  Divider,
+  InputNumber,
+  Switch,
+  Slider,
+  Button,
+} from "antd";
+import * as CSS from "csstype";
 
 const { Header, Footer, Sider, Content } = Layout;
 // const DemoBox = (props) => (
@@ -13,33 +24,33 @@ const FormItem = Form.Item;
 
 const layout = {
   labelCol: {
-    span: 8
+    span: 8,
   },
   wrapperCol: {
-    span: 16
-  }
+    span: 16,
+  },
 };
 const tailLayout = {
   wrapperCol: {
     offset: 8,
-    span: 16
-  }
+    span: 16,
+  },
 };
 
 const Home: FC = () => {
-  const onFinish = values => {
-    console.log('Success:', values);
+  const onFinish = (values) => {
+    console.log("Success:", values);
   };
 
-  const onFinishFailed = errorInfo => {
-    console.log('Failed:', errorInfo);
+  const onFinishFailed = (errorInfo) => {
+    console.log("Failed:", errorInfo);
   };
 
   const center: CSS.Properties = {
-    position: 'absolute',
-    top: '50%',
+    position: "absolute",
+    top: "50%",
     // left: '50%',
-    transform: 'translateY(-50%)'
+    transform: "translateY(-50%)",
     // maxWidth: '100%',
   };
 
@@ -62,20 +73,26 @@ const Home: FC = () => {
                     {...layout}
                     name="basic"
                     initialValues={{
-                      remember: true
+                      remember: true,
                     }}
                     onFinish={onFinish}
                     onFinishFailed={onFinishFailed}
                   >
                     <Form.Item
                       colon={false}
-                      label={<img width={20} src="./user_black.svg" />}
+                      label={
+                        <img
+                          //   preview={false}
+                          width={20}
+                          src="./user_black.svg"
+                        />
+                      }
                       name="username"
                       rules={[
                         {
                           required: true,
-                          message: 'Please input your username'
-                        }
+                          message: "Please input your username",
+                        },
                       ]}
                     >
                       <Input />
@@ -83,13 +100,19 @@ const Home: FC = () => {
 
                     <Form.Item
                       colon={false}
-                      label={<img width={20} src="./lock_black.svg" />}
+                      label={
+                        <img
+                          //   preview={false}
+                          width={20}
+                          src="./lock_black.svg"
+                        />
+                      }
                       name="password"
                       rules={[
                         {
                           required: true,
-                          message: 'Please input your password'
-                        }
+                          message: "Please input your password",
+                        },
                       ]}
                     >
                       <Input.Password />

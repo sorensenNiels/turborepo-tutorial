@@ -1,23 +1,26 @@
-import { SmileFilled } from '@ant-design/icons';
 import {
-  Button,
-  Col,
   Form,
-  InputNumber,
-  Row,
   Select,
+  Row,
+  Col,
+  InputNumber,
+  Switch,
   Slider,
-  Switch
-} from 'antd';
-import Link from 'next/link';
+  Button,
+} from "antd";
+
 // Custom DatePicker that uses Day.js instead of Moment.js
-import DatePicker from '../components/DatePicker';
+import DatePicker from "../components/DatePicker";
+
+import { SmileFilled } from "@ant-design/icons";
+
+import Link from "next/link";
 
 const FormItem = Form.Item;
 const Option = Select.Option;
 
 const content = {
-  marginTop: '100px'
+  marginTop: "100px",
 };
 
 export default function Home() {
