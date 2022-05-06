@@ -4,7 +4,7 @@
   "private": true,
   "engines": {
     "node": ">=16",
-    "pnpm": ">=7"
+    "npm": ">=8"
   },
   "workspaces": [
     "apps/*",
@@ -71,5 +71,5 @@
       "prettier --write"
     ]
   },
-  "packageManager": "pnpm@7.0.0"
+  "packageManager": "npm@8.7.0"
 }
