@@ -19,7 +19,7 @@ export class ConfigService {
       const localFile = `${this.processRoot}/config/local`;
       // eslint-disable-next-line @typescript-eslint/no-var-requires
       const local = require(localFile);
-      Object.keys(local).forEach(key => {
+      Object.keys(local).forEach((key) => {
         // @ts-ignore
         config[key] = local[key];
       });

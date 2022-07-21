@@ -1,56 +1,44 @@
-import React, { FC } from "react";
-import {
-  Layout,
-  Form,
-  Input,
-  Select,
-  Row,
-  Col,
-  Checkbox,
-  Divider,
-  InputNumber,
-  Switch,
-  Slider,
-  Button,
-} from "antd";
-import * as CSS from "csstype";
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable @next/next/no-img-element */
+import { Button, Checkbox, Col, Form, Input, Layout, Row } from 'antd';
+import type * as CSS from 'csstype';
+import type { FC } from 'react';
 
-const { Header, Footer, Sider, Content } = Layout;
+const { Content } = Layout;
 // const DemoBox = (props) => (
 //   <p className={`height-${props.value}`}>{props.children}</p>
 // );
-const FormItem = Form.Item;
 // const Option = Select.Option;
 
 const layout = {
   labelCol: {
-    span: 8,
+    span: 8
   },
   wrapperCol: {
-    span: 16,
-  },
+    span: 16
+  }
 };
 const tailLayout = {
   wrapperCol: {
     offset: 8,
-    span: 16,
-  },
+    span: 16
+  }
 };
 
 const Home: FC = () => {
   const onFinish = (values) => {
-    console.log("Success:", values);
+    console.log('Success:', values);
   };
 
   const onFinishFailed = (errorInfo) => {
-    console.log("Failed:", errorInfo);
+    console.log('Failed:', errorInfo);
   };
 
   const center: CSS.Properties = {
-    position: "absolute",
-    top: "50%",
+    position: 'absolute',
+    top: '50%',
     // left: '50%',
-    transform: "translateY(-50%)",
+    transform: 'translateY(-50%)'
     // maxWidth: '100%',
   };
 
@@ -66,14 +54,14 @@ const Home: FC = () => {
             {/* <div className=" h-100 w-100"> */}
             <div style={center}>
               <Row className="border bg-red-200">
-                <Col xs={24} md={12} className="px-3 pr-md-5 pl-md-3">
+                <Col xs={24} md={12} className="pr-md-5 pl-md-3 px-3">
                   <h1>Login</h1>
                   <h3>Sign In to your account</h3>
                   <Form
                     {...layout}
                     name="basic"
                     initialValues={{
-                      remember: true,
+                      remember: true
                     }}
                     onFinish={onFinish}
                     onFinishFailed={onFinishFailed}
@@ -91,8 +79,8 @@ const Home: FC = () => {
                       rules={[
                         {
                           required: true,
-                          message: "Please input your username",
-                        },
+                          message: 'Please input your username'
+                        }
                       ]}
                     >
                       <Input />
@@ -111,8 +99,8 @@ const Home: FC = () => {
                       rules={[
                         {
                           required: true,
-                          message: "Please input your password",
-                        },
+                          message: 'Please input your password'
+                        }
                       ]}
                     >
                       <Input.Password />

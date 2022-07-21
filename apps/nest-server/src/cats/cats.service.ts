@@ -3,14 +3,14 @@ import { UnprocessableEntityException } from '@packages/nest-problem-details';
 import cuid from 'cuid';
 import _ from 'lodash';
 import { cats } from './data/cats.json';
-import { ICat } from './interfaces';
+import type { ICat } from './interfaces';
 
 @Injectable()
 export class CatsService {
   private cats: ICat[];
 
   constructor() {
-    this.cats = _.map(cats, cat => {
+    this.cats = _.map(cats, (cat) => {
       return { ...cat, id: cuid() };
     });
   }
@@ -46,9 +46,7 @@ export class CatsService {
   }
 
   async getByBreed(breed: string): Promise<ICat[]> {
-    const cats = _.filter(this.cats, { breed });
-
-    return cats;
+    return _.filter(this.cats, { breed });
   }
 
   async delete(id: string): Promise<void> {

@@ -1,13 +1,8 @@
-import {
-  ClassSerializerInterceptor,
-  ValidationError,
-  ValidationPipe
-} from '@nestjs/common';
+import type { ValidationError } from '@nestjs/common';
+import { ClassSerializerInterceptor, ValidationPipe } from '@nestjs/common';
 import { NestFactory, Reflector } from '@nestjs/core';
-import {
-  ExpressAdapter,
-  NestExpressApplication
-} from '@nestjs/platform-express';
+import type { NestExpressApplication } from '@nestjs/platform-express';
+import { ExpressAdapter } from '@nestjs/platform-express';
 import {
   ProblemDetailsExceptionFilter,
   ValidationErrorException

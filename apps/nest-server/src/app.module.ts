@@ -1,4 +1,6 @@
-import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
+/* eslint-disable import/order */
+import type { ApolloDriverConfig } from '@nestjs/apollo';
+import { ApolloDriver } from '@nestjs/apollo';
 import { Module } from '@nestjs/common';
 import { GraphQLModule } from '@nestjs/graphql';
 import { ServeStaticModule } from '@nestjs/serve-static';

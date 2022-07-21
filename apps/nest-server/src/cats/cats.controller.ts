@@ -10,7 +10,7 @@ import {
 } from '@nestjs/common';
 import { CatsService } from './cats.service';
 import { CreateCatDto } from './dtos';
-import { ICat } from './interfaces';
+import type { ICat } from './interfaces';
 
 @Controller('cats')
 export class CatsController {

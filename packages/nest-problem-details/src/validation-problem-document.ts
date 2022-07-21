@@ -24,7 +24,7 @@ export class ValidationProblemDocument extends ProblemDocument {
   ): ValidationProblemDocument {
     const errors: ErrorDetail[] = [];
 
-    _.forEach(_.castArray(validationError), err => {
+    _.forEach(_.castArray(validationError), (err) => {
       _.forEach(err.constraints, (v: string, k: string) => {
         errors.push({
           code: k,
