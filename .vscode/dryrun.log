@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/nielsp/Projects/turborepo-tutorial'
+docker rm local-postgres --force
+docker run --name local-postgres -p 5432:5432 -e POSTGRES_PASSWORD=postgres -d postgres
+make: Leaving directory '/home/nielsp/Projects/turborepo-tutorial'
+ 

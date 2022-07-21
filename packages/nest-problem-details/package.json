@@ -21,7 +21,7 @@
     "lodash": "4.17.21",
     "reflect-metadata": "0.1.13",
     "rxjs": "7.5.5",
-    "type-fest": "2.12.2"
+    "type-fest": "2.17.0"
   },
   "devDependencies": {
     "@nestjs/testing": "8.4.4",
