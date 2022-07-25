@@ -1,8 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 import { Button, Checkbox, Col, Form, Input, Layout, Row } from 'antd';
-import type * as CSS from 'csstype';
-import type { FC } from 'react';
+import type { CSSProperties, FC } from 'react';
 
 const { Content } = Layout;
 // const DemoBox = (props) => (
@@ -34,7 +33,7 @@ const Home: FC = () => {
     console.log('Failed:', errorInfo);
   };
 
-  const center: CSS.Properties = {
+  const center: CSSProperties = {
     position: 'absolute',
     top: '50%',
     // left: '50%',
