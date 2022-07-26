@@ -30,8 +30,8 @@
     "type-fest": "2.17.0"
   },
   "devDependencies": {
+    "@dk-nodesoft/shared-config": "workspace:^",
     "@nestjs/testing": "8.4.7",
-    "@nodesoft/shared-config": "*",
     "@types/cls-hooked": "4.3.3",
     "@types/config": "0.0.41",
     "@types/lodash": "4.14.182",

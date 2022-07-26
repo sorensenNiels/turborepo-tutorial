@@ -16,6 +16,6 @@
     "type-fest": "2.17.0"
   },
   "devDependencies": {
-    "@nodesoft/shared-config": "*"
+    "@dk-nodesoft/shared-config": "workspace:^"
   }
 }

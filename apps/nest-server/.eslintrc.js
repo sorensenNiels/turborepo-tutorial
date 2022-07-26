@@ -4,11 +4,11 @@
  */
 
 // Workaround for https://github.com/eslint/eslint/issues/3458 (re-export of @rushstack/eslint-patch)
-require('@your-org/eslint-config-bases/patch/modern-module-resolution');
+require('@dk-nodesoft/eslint-config/patch/modern-module-resolution');
 
 const {
   getDefaultIgnorePatterns
-} = require('@your-org/eslint-config-bases/helpers');
+} = require('@dk-nodesoft/eslint-config/helpers');
 
 module.exports = {
   root: true,
@@ -18,14 +18,14 @@ module.exports = {
   },
   ignorePatterns: [...getDefaultIgnorePatterns()],
   extends: [
-    '@your-org/eslint-config-bases/typescript',
-    '@your-org/eslint-config-bases/sonar',
-    '@your-org/eslint-config-bases/regexp',
-    '@your-org/eslint-config-bases/jest',
-    '@your-org/eslint-config-bases/graphql-schema',
+    '@dk-nodesoft/eslint-config/typescript',
+    '@dk-nodesoft/eslint-config/sonar',
+    '@dk-nodesoft/eslint-config/regexp',
+    '@dk-nodesoft/eslint-config/jest',
+    '@dk-nodesoft/eslint-config/graphql-schema',
 
     // Apply prettier and disable incompatible rules
-    '@your-org/eslint-config-bases/prettier'
+    '@dk-nodesoft/eslint-config/prettier'
   ],
   rules: {},
   overrides: []

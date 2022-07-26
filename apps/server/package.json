@@ -14,7 +14,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@nodesoft/shared-config": "*",
+    "@dk-nodesoft/shared-config": "workspace:^",
     "@types/express": "4.17.13",
     "nodemon": "2.0.19"
   },

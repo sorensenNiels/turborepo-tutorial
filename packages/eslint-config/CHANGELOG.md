@@ -1,4 +1,4 @@
-# @your-org/eslint-config-bases
+# @dk-nodesoft/eslint-config
 
 ## 1.5.0
 

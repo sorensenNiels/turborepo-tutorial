@@ -1,5 +1,5 @@
 {
-  "extends": "@nodesoft/shared-config/ts-nest.json",
+  "extends": "@dk-nodesoft/shared-config/ts-nest.json",
   "compilerOptions": {
     "outDir": "./dist",
     "baseUrl": "./"

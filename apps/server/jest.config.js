@@ -1,4 +1,4 @@
 module.exports = {
-  ...require('@nodesoft/shared-config/jest-server'),
+  ...require('@dk-nodesoft/shared-config/jest-server'),
   rootDir: 'src'
 };

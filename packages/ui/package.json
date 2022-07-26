@@ -1,5 +1,5 @@
 {
-  "name": "@nodesoft/ui",
+  "name": "@dk-nodesoft/ui",
   "version": "0.0.1",
   "main": "./index.tsx",
   "types": "./index.tsx",
@@ -9,7 +9,7 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@nodesoft/shared-config": "*",
+    "@dk-nodesoft/shared-config": "workspace:^",
     "@types/react": "18.0.15",
     "@types/react-dom": "18.0.6",
     "autoprefixer": "10.4.7",

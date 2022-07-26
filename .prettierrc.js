@@ -5,7 +5,7 @@
  */
 
 // @ts-ignore
-const { getPrettierConfig } = require('@your-org/eslint-config-bases/helpers');
+const { getPrettierConfig } = require('@dk-nodesoft/eslint-config/helpers');
 
 const { overrides = [], ...prettierConfig } = getPrettierConfig();
 
