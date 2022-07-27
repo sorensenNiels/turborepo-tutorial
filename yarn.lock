@@ -1405,7 +1405,7 @@ __metadata:
     "@testing-library/react-hooks": ^8.0.1
     "@types/jest": 28.1.6
     "@types/node": 18.6.1
-    "@types/prettier": 2.6.3
+    "@types/prettier": 2.6.4
     "@types/react": 18.0.15
     "@types/react-dom": 18.0.6
     "@typescript-eslint/eslint-plugin": ^5.31.0
@@ -1421,7 +1421,7 @@ __metadata:
     eslint-plugin-prettier: ^4.2.1
     eslint-plugin-react: ^7.30.1
     eslint-plugin-react-hooks: ^4.6.0
-    eslint-plugin-regexp: ^1.7.0
+    eslint-plugin-regexp: ^1.8.0
     eslint-plugin-sonarjs: ^0.14.0
     eslint-plugin-tailwindcss: ^3.6.0
     eslint-plugin-testing-library: ^5.5.1
@@ -3356,7 +3356,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/prettier@npm:2.6.3, @types/prettier@npm:^2.1.5":
+"@types/prettier@npm:2.6.4":
+  version: 2.6.4
+  resolution: "@types/prettier@npm:2.6.4"
+  checksum: a8ec6601cbacf8040782cc883bf1a9393fdcb991ebe88440b0f875bb1556652927ac9fe61a721b6c666ac6252158ba327ce2868559bafa2c86e7dfef4089782a
+  languageName: node
+  linkType: hard
+
+"@types/prettier@npm:^2.1.5":
   version: 2.6.3
   resolution: "@types/prettier@npm:2.6.3"
   checksum: e1836699ca189fff6d2a73dc22e028b6a6f693ed1180d5998ac29fa197caf8f85aa92cb38db642e4a370e616b451cb5722ad2395dab11c78e025a1455f37d1f0
@@ -4208,9 +4215,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"antd@npm:4.22.0":
-  version: 4.22.0
-  resolution: "antd@npm:4.22.0"
+"antd@npm:4.22.1":
+  version: 4.22.1
+  resolution: "antd@npm:4.22.1"
   dependencies:
     "@ant-design/colors": ^6.0.0
     "@ant-design/icons": ^4.7.0
@@ -4226,7 +4233,7 @@ __metadata:
     rc-checkbox: ~2.3.0
     rc-collapse: ~3.3.0
     rc-dialog: ~8.9.0
-    rc-drawer: ~5.0.0-alpha.7
+    rc-drawer: ~5.0.0-alpha.8
     rc-dropdown: ~4.0.0
     rc-field-form: ~1.27.0
     rc-image: ~5.7.0
@@ -4259,7 +4266,7 @@ __metadata:
   peerDependencies:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
-  checksum: f5c4edb50c776fa8941872822596eef77e62b732b3776b17091a74514edca42499f61478238c5d760315bfd979b4e3b65c80264861903b9db05af033f7f1ecf8
+  checksum: 75eea68a988382dd2b44c89f9d627c2951004913298da6c816b22ff375b7bfc3de4740fb211b2b748add0bb0d8559fad781085bc4ec160cba2a51330f7ea1e22
   languageName: node
   linkType: hard
 
@@ -7120,9 +7127,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-regexp@npm:^1.7.0":
-  version: 1.7.0
-  resolution: "eslint-plugin-regexp@npm:1.7.0"
+"eslint-plugin-regexp@npm:^1.8.0":
+  version: 1.8.0
+  resolution: "eslint-plugin-regexp@npm:1.8.0"
   dependencies:
     comment-parser: ^1.1.2
     eslint-utils: ^3.0.0
@@ -7134,7 +7141,7 @@ __metadata:
     scslre: ^0.1.6
   peerDependencies:
     eslint: ">=6.0.0"
-  checksum: eb105d8dad765a870618f6cca0bca7a590ceebf24a640d713e85952a765c66cc9c2bcdbc604eaaf1ac0a37570aceec4ee42f2d53b1eda5d4490c088af68b8549
+  checksum: 971cd74873c25a268ceb80dc1dcb71d42ccbaed971e07d291ff3cd0bcf44eda70235613ba95ea8949821a83fd60a7c17f8b4e8521f89bd96bdc801a59d73287a
   languageName: node
   linkType: hard
 
@@ -11123,7 +11130,7 @@ __metadata:
     "@next/bundle-analyzer": 12.2.3
     "@types/node": 18.6.1
     "@types/react": 18.0.15
-    antd: 4.22.0
+    antd: 4.22.1
     autoprefixer: 10.4.7
     cross-env: 7.0.3
     csstype: 3.1.0
@@ -12842,9 +12849,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rc-drawer@npm:~5.0.0-alpha.7":
-  version: 5.0.0-alpha.7
-  resolution: "rc-drawer@npm:5.0.0-alpha.7"
+"rc-drawer@npm:~5.0.0-alpha.8":
+  version: 5.0.0-alpha.8
+  resolution: "rc-drawer@npm:5.0.0-alpha.8"
   dependencies:
     "@babel/runtime": ^7.10.1
     classnames: ^2.2.6
@@ -12853,7 +12860,7 @@ __metadata:
   peerDependencies:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
-  checksum: d1a5da8666e4cc22f5571063cd879d6e4753fe8cff635cad4ce3d6797e65ceb960c737b099d9f5ef45fb2820fdd0427e31862f6f3dc53bd7b6ece1f1fa87b394
+  checksum: 95054da3cff045d94a9eff50fb2712ab2f5bedd992183439c09bd7ce844368537f64a8a0f19926d3464aadbac58e30248b0f16160dbd98ead5efead5c755f51a
   languageName: node
   linkType: hard
 
@@ -15606,7 +15613,7 @@ __metadata:
     "@types/jest": 28.1.6
     "@types/lodash": 4.14.182
     "@types/node": 18.6.1
-    "@types/prettier": 2.6.3
+    "@types/prettier": 2.6.4
     "@types/react": 18.0.15
     "@types/react-dom": 18.0.6
     "@types/shell-quote": 1.7.1
