@@ -1404,7 +1404,7 @@ __metadata:
     "@testing-library/react": ^13.3.0
     "@testing-library/react-hooks": ^8.0.1
     "@types/jest": 28.1.6
-    "@types/node": 18.6.1
+    "@types/node": 18.6.2
     "@types/prettier": 2.6.4
     "@types/react": 18.0.15
     "@types/react-dom": 18.0.6
@@ -2703,7 +2703,7 @@ __metadata:
     "@nestjs/testing": 8.4.7
     "@packages/essentials": 0.0.1
     "@types/cls-hooked": 4.3.3
-    "@types/config": 0.0.41
+    "@types/config": 3.3.0
     "@types/lodash": 4.14.182
     "@types/response-time": 2.3.5
     class-validator: 0.13.2
@@ -3092,10 +3092,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/config@npm:0.0.41":
-  version: 0.0.41
-  resolution: "@types/config@npm:0.0.41"
-  checksum: 528eb5e5d60c48cf82a2b0988ee1e5e088472698ad25944131b0ba87b2e3bb0989f3b4d45edb9d49eefcc8bf158c267905c386aaec15857b9fb24be449c3f27c
+"@types/config@npm:3.3.0":
+  version: 3.3.0
+  resolution: "@types/config@npm:3.3.0"
+  checksum: d9485041cfa05864d3b8095cf7b44fae910887f6782dc43ab1ba4ea78d9cdf4a8c9d697557318ede2b4b63a05b7f91e8571b8dbe048ad024e709d9e51e0487d8
   languageName: node
   linkType: hard
 
@@ -3314,10 +3314,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:18.6.1":
-  version: 18.6.1
-  resolution: "@types/node@npm:18.6.1"
-  checksum: 06331f68bc73d93b73977ae19ca87818e004bc7b8e70b0d4f73b0ea5e341a4a1ba6f0e79db8fb75a841af2b8d74552d6b9a8f846b267954689f57effedcf5d77
+"@types/node@npm:18.6.2":
+  version: 18.6.2
+  resolution: "@types/node@npm:18.6.2"
+  checksum: 644c460baedb1fbbd55369ab621167cb39ddaa727fd4fcf4bc7080183cf936d7ff8c2c886ba93ff42768d6f7a579a540e6d1e63d3adba4e5758fb13671ae68ce
   languageName: node
   linkType: hard
 
@@ -11128,7 +11128,7 @@ __metadata:
   dependencies:
     "@ant-design/icons": 4.7.0
     "@next/bundle-analyzer": 12.2.3
-    "@types/node": 18.6.1
+    "@types/node": 18.6.2
     "@types/react": 18.0.15
     antd: 4.22.1
     autoprefixer: 10.4.7
@@ -15612,7 +15612,7 @@ __metadata:
     "@types/express": 4.17.13
     "@types/jest": 28.1.6
     "@types/lodash": 4.14.182
-    "@types/node": 18.6.1
+    "@types/node": 18.6.2
     "@types/prettier": 2.6.4
     "@types/react": 18.0.15
     "@types/react-dom": 18.0.6

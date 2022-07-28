@@ -33,7 +33,7 @@
     "@dk-nodesoft/shared-config": "workspace:^",
     "@nestjs/testing": "8.4.7",
     "@types/cls-hooked": "4.3.3",
-    "@types/config": "0.0.41",
+    "@types/config": "3.3.0",
     "@types/lodash": "4.14.182",
     "@types/response-time": "2.3.5",
     "jest": "28.1.3",
